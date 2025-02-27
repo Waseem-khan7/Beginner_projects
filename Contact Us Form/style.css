@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 20px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.info-section{
+    width: 48%;
+}
+
+.info-section img{
+    width: 100%;
+    height: auto;
+}
+
+.form-section{
+    width: 48%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    background-color:#e2e1e1;
+}
+
+button{
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 20%;
+    margin: 10px;
+
+}
+
+button:hover{
+    background-color: #555;
+}
+
+/* Responsive design  */
+
+@media(min-width: 768px){
+    .contact-container {
+        flex-direction: row;
+    }
+
+    .info-section, .form-section{
+        width: 48%;
+    }
+
+    .form-section{
+        margin-top: 0;
+    }
+}
